@@ -1,6 +1,7 @@
 import React from 'react';
 import Main from './pages/Main';
 import Products from './pages/Products';
+import Item from './pages/Item';
 import {
   BrowserRouter,
   Routes,
@@ -15,7 +16,7 @@ function App() {
         <Route path="/" element={<Main />}></Route>
 
         <Route path="products" element={<Products />}></Route>
-        <Route path="products/:productId" element={<div>Product 123 </div>} />
+        <Route path="products/:productId" element={<Item/>} />
       </Routes>
     </BrowserRouter>
   );
