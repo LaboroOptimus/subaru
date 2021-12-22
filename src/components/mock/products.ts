@@ -1,5 +1,13 @@
 import item from './item.jpeg'
 
+export interface Product {
+    id: number,
+    title: string,
+    part: string,
+    price: number,
+    image: string,
+}
+
 export const data = [
     {
         id: 0,

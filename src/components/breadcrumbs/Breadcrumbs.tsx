@@ -1,15 +1,13 @@
-import React from 'react';
-import cn from 'classnames'
-import './index.scss'
+import React from "react";
+import cn from "classnames";
+import "./index.scss";
 
 interface Props {
-    path: string
+  path: string;
 }
 
-const Breadcrumbs:React.FC<Props> = ({ path }) => {
-    return (
-        <div className={cn('wrapper', 'breadcrumbs')}>{path}</div>
-    )
-}
+const Breadcrumbs: React.FC<Props> = ({ path }) => {
+  return <div className={cn("wrapper", "breadcrumbs")}>{path}</div>;
+};
 
-export { Breadcrumbs }
+export { Breadcrumbs };

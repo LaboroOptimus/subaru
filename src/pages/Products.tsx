@@ -1,16 +1,16 @@
-import React from 'react';
-import { Breadcrumbs } from '../components/breadcrumbs/Breadcrumbs';
-import { TopMenu } from '../components/main/TopMenu';
-import { Items } from '../components/products/Items';
+import React from "react";
+import { Breadcrumbs } from "../components/breadcrumbs/Breadcrumbs";
+import { TopMenu } from "../components/main/TopMenu";
+import { Items } from "../components/products/Items";
 
 const Products = () => {
-    return (
-        <>
-            <TopMenu />
-            <Breadcrumbs path='Home / Products' />
-            <Items/>
-        </>
-    )
+  return (
+    <>
+      <TopMenu />
+      <Breadcrumbs path="Home / Products" />
+      <Items />
+    </>
+  );
 };
 
-export default Products
+export default Products;

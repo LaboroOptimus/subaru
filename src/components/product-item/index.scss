@@ -1,69 +1,68 @@
 .products {
-    .products-slider {
-        .slide > img {
-            height: 400px;
-        }
-
-        .slick-dots {
-            bottom: -30px;
-            justify-content: space-between;
-            position: relative;
-            margin-left: 0;
-            margin-right: 0;
-
-            & > li {
-                width: auto !important;
-                height: auto;
-                margin-right: 0;
-                margin-left: 0;
-            }
-        }
-
-        .ant-carousel .slick-dots {
-            width: auto;
-        }
-
-        .dot-image {
-            display: block;
-            width: 150px;
-        }
+  .products-slider {
+    .slide > img {
+      height: 400px;
     }
 
-    & h4 {
-        font-size: 22px;
+    .slick-dots {
+      bottom: -30px;
+      justify-content: space-between;
+      position: relative;
+      margin-left: 0;
+      margin-right: 0;
+
+      & > li {
+        width: auto !important;
+        height: auto;
+        margin-right: 0;
+        margin-left: 0;
+      }
     }
 
-    .products-tabs {
-        margin-top: 30px;
+    .ant-carousel .slick-dots {
+      width: auto;
     }
 
-    .price-caption {
-        text-align: center;
-        font-size: 16px;
-        margin-bottom: 15px;
+    .dot-image {
+      display: block;
+      width: 150px;
     }
+  }
 
-    .product-price {
-        display: flex;
-        justify-content: space-between;
-        font-size: 35px;
-        margin-bottom: 15px;
+  & h4 {
+    font-size: 22px;
+  }
 
-        & > .price {
+  .products-tabs {
+    margin-top: 30px;
+  }
 
-        }
+  .price-caption {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .product-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    margin-bottom: 15px;
+
+    & > .price {
     }
+  }
 
-    .product-dealer {
-        border: 1px solid #eee;
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
+  .product-dealer {
+    border: 1px solid #eee;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
 
-        & > .name {
-            font-size: 20px;
-            font-weight: 500;
-        }
+    & > .name {
+      font-size: 20px;
+      font-weight: 500;
     }
+  }
 }

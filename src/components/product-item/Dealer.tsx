@@ -1,21 +1,19 @@
-import React from 'react'
-import { Button } from 'antd'
+import React from "react";
+import { Button } from "antd";
 
 interface Props {
-    name: string
+  name: string;
 }
 
-const Dealer:React.FC<Props> = ({ name }) => {
-    return (
-        <div className='product-dealer'>
-            <div className='name'>
-                {name}
-            </div>
-            <div>
-            <Button type='primary'>Shop now</Button>
-            </div>
-        </div>
-    )
-}
+const Dealer: React.FC<Props> = ({ name }) => {
+  return (
+    <div className="product-dealer">
+      <div className="name">{name}</div>
+      <div>
+        <Button type="primary">Shop now</Button>
+      </div>
+    </div>
+  );
+};
 
-export { Dealer }
+export { Dealer };
