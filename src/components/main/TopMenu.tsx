@@ -8,17 +8,17 @@ const TopMenu = () => {
   return (
     <Row className={cn("wrapper", "top-menu")}>
       <Col span={12}>
-        <img src={logo} className="logo" />
+        <img src={logo} className="logo" data-testid='logo' />
         <span>
           Shop Subaru Parts, Subaru Accessories and Subaru Gear with Subaru
           Parts Online.
         </span>
       </Col>
       <Col span={12} className="top-menu-items">
-        <a href="/">Home</a>
-        <a href="/">Accessories</a>
-        <a href="/">Subaru Gear</a>
-        <a href="/">Find a Retailer</a>
+        <a data-testid='link' href="/">Home</a>
+        <a data-testid='link' href="/">Accessories</a>
+        <a data-testid='link' href="/">Subaru Gear</a>
+        <a data-testid='link' href="/">Find a Retailer</a>
       </Col>
     </Row>
   );

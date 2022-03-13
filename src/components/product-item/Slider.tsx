@@ -13,7 +13,7 @@ const Slider: React.FC<Props> = ({ product }) => {
     customPaging: function (i: any) {
       return (
         <a>
-          <img className="dot-image" src={product.image} />
+          <img className="dot-image" src={product?.image} />
         </a>
       );
     },
@@ -28,13 +28,13 @@ const Slider: React.FC<Props> = ({ product }) => {
   return (
     <Carousel {...settings} afterChange={onChange} className="products-slider">
       <div className="slide">
-        <img src={product.image} />
+        <img src={product?.image} />
       </div>
       <div className="slide">
-        <img src={product.image} />
+        <img src={product?.image} />
       </div>
       <div className="slide">
-        <img src={product.image} />
+        <img src={product?.image} />
       </div>
     </Carousel>
   );
