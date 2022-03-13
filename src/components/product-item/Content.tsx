@@ -24,15 +24,15 @@ const Content: React.FC<Props> = ({ product }) => {
         System with amplifier.
       </p>
 
-      <Tabs onChange={callback} type="card" className="products-tabs">
-        <TabPane tab="What this fits" key="1">
+      <Tabs onChange={callback} type="card" className="products-tabs" data-testid='tabs'>
+        <TabPane tab="What this fits" key="1" data-testid='tabs-item'>
           This product fits 16 vehicle variants. Subaru: 1 models, 16 variants
           between 2019 and 2022.
         </TabPane>
-        <TabPane tab="Product types" key="2">
+        <TabPane tab="Product types" key="2" data-testid='tabs-item'>
           Content of Tab Pane 2
         </TabPane>
-        <TabPane tab="Services" key="3">
+        <TabPane tab="Services" key="3" data-testid='tabs-item'>
           Content of Tab Pane 3
         </TabPane>
       </Tabs>

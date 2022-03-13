@@ -3,11 +3,20 @@ import cn from "classnames";
 import "./index.scss";
 
 interface Props {
-  path: string;
+  path?: string | null;
 }
 
 const Breadcrumbs: React.FC<Props> = ({ path }) => {
-  return <div className={cn("wrapper", "breadcrumbs")}>{path}</div>;
+  console.log(path);
+  return (
+    <>
+      {path && path.length && (
+        <div data-testid="breadcrumbs" className={cn("wrapper", "breadcrumbs")}>
+          {path}
+        </div>
+      )}
+    </>
+  );
 };
 
 export { Breadcrumbs };
